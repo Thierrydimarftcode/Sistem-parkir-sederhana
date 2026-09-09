@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Parkir Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            padding: 50px 15px;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 350px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+        .title {
+            text-align: center;
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 1.4;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: #555555;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4a90e2;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Parkir SMK Muhammadiyah 03<br>Tangerang Selatan</h2>
+
+        <form action="parkir.php" method="post">
+            
+            <div class="form-group">
+                <label for="nis">NIS:</label>
+                <input 
+                    type="text" 
+                    id="nis" 
+                    name="nis" 
+                    placeholder="Masukkan NIS" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="plat_motor">Plat Motor:</label>
+                <input 
+                    type="text" 
+                    id="plat_motor" 
+                    name="plat_motor" 
+                    placeholder="Masukkan Plat Nomor" 
+                    required
+                >
+            </div>
+
+            <input type="submit" value="Kirim">
+
+        </form>
+    </div>
+
+</body>
+</html>
