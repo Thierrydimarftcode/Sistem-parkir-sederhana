@@ -6,9 +6,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $host     = "sql313.infinityfree.com";
-$username = "if0_42872392";     
-$password = "thierry300899";         
-$database = "if0_42872392_db_parkir"; 
+$username = "Thierrydimar";     
+$password = "Kepoo";         
+$database = "db_nya_thierry"; 
 
 $koneksi = mysqli_connect($host, $username, $password, $database);
 
